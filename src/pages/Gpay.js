@@ -1,8 +1,16 @@
 import GooglePayButton from '@google-pay/button-react';
+import { useState } from 'react';
 export default function App() {
+    const [data, setData] = useState(null)
+
+    function getData(val) {
+        setData(val.target.value)
+        console.warn(val.target.value)
+    }
+
     return (
         <div>
-            <div>Hello </div>
+            <input type="text" onChange={getData}/>
             <div className="App">
                 <GooglePayButton
                     environment="TEST"
@@ -32,9 +40,9 @@ export default function App() {
                         transactionInfo: {
                             totalPriceStatus: 'FINAL',
                             totalPriceLabel: 'Total',
-                            totalPrice: '1',
-                            currencyCode: 'USD',
-                            countryCode: 'US',
+                            totalPrice: data,
+                            currencyCode: 'INR',
+                            countryCode: 'IN',
                         },
                         shippingAddressRequired: true,
                         callbackIntents: ['SHIPPING_ADDRESS', 'PAYMENT_AUTHORIZATION'],
@@ -54,7 +62,7 @@ export default function App() {
                     }
                     existingPaymentMethodRequired='false'
                     buttonColor='black'
-                    buttonType='Buy'
+                    buttonType='donate'
                 />
             </div>
         </div>

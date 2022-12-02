@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import GooglePayButton from '@google-pay/button-react';
 import React from 'react';
