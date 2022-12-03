@@ -2,7 +2,7 @@ import GooglePayButton from '@google-pay/button-react';
 import { useState } from 'react';
 
 
-export default function App() {    
+export default function App() {
     const [data, setData] = useState(null)
 
     function getData(val) {
@@ -11,13 +11,16 @@ export default function App() {
     }
 
     return (
-        <div>
-            <div className="App">
+        <div className='w-screen bg-no-repeat bg-cover '>
+            <div className="grid-row bg-back-ground justify-items-center">
+                
+                    <input type="text" style={{
+                        height: "40px",
+                        border: "1px solid white",
+                        borderRadius:"5px",
+                        background: "#E8C4C4"
+                    }} onChange={getData} />
                 <div>
-                <input type="text" style={{height:"50px",
-                                           border:"1px solid black",
-                                           background:"" }} onChange={getData}/>
-                </div>
                 <GooglePayButton
                     environment="TEST"
                     paymentRequest={{
@@ -71,6 +74,7 @@ export default function App() {
                     buttonType='donate'
                 />
             </div>
+        </div>
         </div>
     );
 }

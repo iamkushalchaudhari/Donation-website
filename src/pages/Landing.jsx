@@ -1,8 +1,9 @@
 export default function Example() {
     return (
-        <div class=" p-4 bg-gradient-to-r from-purple-500 to-pink-500 flex justify-center shadow-xl gap-24">
+        <div>
+        <div class=" p-4 bg-peach flex lg:flex-row sm:flex-col sm:items-center justify-center gap-24 drop-shadow-2xl ">
            {/* 1st cardy */}
-            <div class="max-w-sm bg-white rounded-lg shadow-md">
+            <div class="max-w-sm bg-white rounded-lg shadow-lg shadow-white/80">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://drive.google.com/uc?export=view&id=1vD54gxIKsP9o-2tO3UxwTd46XzEUycn6" alt="" />
                 </a>
@@ -16,7 +17,7 @@ export default function Example() {
             </div>
 
             {/* 2nd card */}
-            <div class="max-w-sm bg-white rounded-lg shadow-md">
+            <div class="max-w-sm bg-white rounded-lg shadow-lg shadow-white/80">
                 <a href="#">
                     <img class="rounded-t-lg " src="https://drive.google.com/uc?export=view&id=1iaHhYIaMfivsG1hBBNsio-SYbeFqf1cH" alt="" />
                 </a>
@@ -30,7 +31,7 @@ export default function Example() {
             </div>
 
             {/* #\3rd card */}
-            <div class="max-w-sm bg-white rounded-lg shadow-md">
+            <div class="max-w-sm bg-white rounded-lg shadow-lg shadow-white/80">
                 <a className="flex justify-center" href="#">
                     <img class="rounded-t-lg h-56 " src="https://drive.google.com/uc?export=view&id=1Kl245-lCg8T-AstZWIzm-1ZUpzggarWM" alt="" />
                 </a>
@@ -42,6 +43,9 @@ export default function Example() {
                     
                 </div>
             </div>
+            
+            </div>
+
         </div>
     );
 };

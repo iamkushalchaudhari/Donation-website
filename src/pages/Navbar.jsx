@@ -1,35 +1,35 @@
 export default function Example() {
-    return (
-        <div>
-            <nav class="bg-white px-6 shadow-xl border-b-2 border-slate-400">
-                <div class="container flex flex-wrap items-center justify-between mx-auto">
-                    <a href="/" class="flex items-center">
-                        <img src="https://img.icons8.com/nolan/96/charity-box.png" class=" mr-3 sm:h-12" alt="Flowbite Logo" />
-                        <span class="self-center text-2xl font-semibold tracking-wide ">Fundible</span>
-                    </a>
-                    
-                    <div class="hidden w-full md:block md:w-auto" >
-                        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-semibold md:border-0 md:bg-white ">
-                            <li>
-                                <a href="#" class="block py-2 pl-2 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Home</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block py-2 pl-2 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">About</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block py-2 pl-2 pr-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Contact</a>
-                            </li>
-                            <li>
-                            <a href="/payment"
-                               className="flex items-center justify-center w-full px-5 py-2 text-base font-semibold text-white bg-indigo-600 border border-transparent rounded-md">
-                                Donate
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
+  return (
+    <div>
+      <nav class="bg-bluegray sm:px-4 drop-shadow-xl">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="/" class="flex items-center">
+            <img src="https://img.icons8.com/nolan/96/charity-box.png" class="h-6 mr-3 mb-1 sm:h-14" alt="Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap pt-1 tracking-wide text-white">Fundible</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-3 md:flex-row md:space-x-8 md:text-lg md:font-semibold  ">
+              <li>
+                <a href="/" class="block py-2 pl-3 pr-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:pt-2">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:pt-2">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2">Contact</a>
+              </li>
+              <li>
+                <a class="inline-block px-7 py-3 mr-2 bg-white/90 text-black font-bold text-sm leading-snug uppercase rounded shadow-md hover:shadow-white hover:bg-white hover:shadow-lg focus:bg-lightpeach focus:shadow-lg focus:outline-none focus:ring-0 active:bg-lightpeach active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="/payment" role="button">Donate</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    )
+      </nav>
+
+    </div>
+  )
 }
