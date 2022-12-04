@@ -23,7 +23,7 @@ export default function Example() {
                 <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2">Contact</a>
               </li>
               <li>
-                <a class="inline-block px-7 py-3 mr-2 bg-white/90 text-black font-bold text-sm leading-snug uppercase rounded shadow-md hover:shadow-white hover:bg-white hover:shadow-lg focus:bg-lightpeach focus:shadow-lg focus:outline-none focus:ring-0 active:bg-lightpeach active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="/payment" role="button">Donate</a>
+                <a class="inline-block px-7 py-3 mr-2 bg-white/90 text-black font-bold text-sm uppercase rounded shadow-md hover:shadow-white hover:bg-white hover:shadow-lg focus:bg-lightpeach focus:shadow-lg active:bg-elightpeach active:shadow-lg transition duration-150 ease-in-out" href="/details" role="button">Donate</a>
               </li>
             </ul>
           </div>
