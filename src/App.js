@@ -7,10 +7,12 @@ import Landing from "./pages/Landing";
 import Footer from "./pages/Footer";
 import DonateButton from "./pages/DonateSection";
 import Details from "./pages/Details";
+import Contact from "./pages/Contact";
 export default function App(){
   return(
     <Router>
     <Routes>
+    <Route path='/contact' element={<><Navbar/><Contact/></>}/> 
       <Route path='/details' element={<><Navbar/><Details/></>}/>
       <Route exact path ='/payment' element={<><Navbar/><Gpay/></> }/>
       <Route exact path='/' element={<><Navbar/> <Landing/><DonateButton/><Footer/></> }/>

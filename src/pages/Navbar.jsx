@@ -14,13 +14,13 @@ export default function Example() {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-3 md:flex-row md:space-x-8 md:text-lg md:font-semibold  ">
               <li>
-                <a href="/" class="block py-2 pl-3 pr-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:pt-2">Home</a>
+                <a href="/" class="block py-2 pl-3 pr-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-peach md:pt-2">Home</a>
               </li>
               <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:pt-2">About</a>
+                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-peach md:pt-2">About</a>
               </li>
               <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2">Contact</a>
+                <a href="/contact" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-peach md:p-2">Contact</a>
               </li>
               <li>
                 <a class="inline-block px-7 py-3 mr-2 bg-white/90 text-black font-bold text-sm uppercase rounded shadow-md hover:shadow-white hover:bg-white hover:shadow-lg focus:bg-lightpeach focus:shadow-lg active:bg-elightpeach active:shadow-lg transition duration-150 ease-in-out" href="/details" role="button">Donate</a>

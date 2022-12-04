@@ -1,19 +1,19 @@
-import emailjs from '@emailjs/browser';
+//import emailjs from '@emailjs/browser';
 export default function Example() {
              
-      const sendEmail = (e) => {
-        e.preventDefault();
+    //   const sendEmail = (e) => {
+    //     e.preventDefault();
     
-        emailjs.sendForm('gmail', 'template_e7jx5pb', e.target, 'YvGJVU2nfe5qdcJO5')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset()
-      };
+    //     emailjs.sendForm('gmail', 'template_e7jx5pb', e.target, 'YvGJVU2nfe5qdcJO5')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //       e.target.reset()
+    //   };
     return (
-        <form onSubmit={sendEmail}>
+        // <form onSubmit={sendEmail}>
         
             <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen">
                 <div class="w-full bg-lightpeach rounded-lg shadow sm:max-w-md ">
@@ -58,6 +58,6 @@ export default function Example() {
                 </div>
             </div>
         
-       </form>
+      // </form>
     );
 };
